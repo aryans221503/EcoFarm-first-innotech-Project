@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Bank</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background: url('https://img.freepik.com/free-photo/various-seeds-sesame-flax-seed-sunflower-seeds-pumpkin-seeds-salads_114579-10956.jpg?t=st=1731780703~exp=1731784303~hmac=6bd5ed26247c6db8abd06c0a268e961bdc1cf0da016de96ecead0d57000bf5b5&w=1060');
+            color: black;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: calc((100% - 60px) / 3);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .buy-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Seed Bank</h1>
+    <p>Your one-stop shop for all kinds of seeds!</p>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/close-up-view-black-pepper-seeds-bowl-tomatoes-wooden-table_141793-10704.jpg?t=st=1731780184~exp=1731783784~hmac=b672502e7ce49422eaadd80f00544b8ac33da94df58bc0d6605808b72e869c23&w=1060" alt="Seed Product 1">
+            <h2>Organic Tomato Seeds</h2>
+            <p>Price: $5.00</p>
+            <a href="https://www.amazon.in/s?k=organic+tomato+seeds"><button class="buy-button">BUY</button></a>        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/pile-salted-heart-shaped-crackers-placed-out-orange-bowl_114579-83207.jpg?t=st=1731782218~exp=1731785818~hmac=5496e849986f51cf2a9c4adda21724749112818205dadc8b46bd59adc2e3b842&w=1060" alt="Seed Product 2">
+            <h2>Heritage Corn Seeds</h2>
+            <p>Price: $4.00</p>
+            <a href="https://www.amazon.in/s?k=heritage+corn+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/black-sunflower-seeds-bowl-white-background-high-angle-view_176474-5185.jpg?t=st=1731780321~exp=1731783921~hmac=b25a9399cb13b75d7d9e0e8e43a363e6f9ae336eb88a53d3773e7f4eca26da80&w=996" alt="Seed Product 3">
+            <h2>Sunflower Seeds</h2>
+            <p>Price: $3.50</p>
+            <a href="https://www.amazon.in/s?k=sunflower+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/black-cumin-seeds-wooden-spoon-concrete-surface_114579-71093.jpg?t=st=1731780354~exp=1731783954~hmac=0dd993dd7d2534d6c6ab1172196db184d75fbb9a996c6b8f4659fccfda85ecba&w=1060" alt="Seed Product 4">
+            <h2>Herbal Basil Seeds</h2>
+            <p>Price: $2.50</p>
+            <a href="https://www.amazon.in/s?k=herbal+basil+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/top-view-pile-carrots_342744-512.jpg?t=st=1731782304~exp=1731785904~hmac=b3016cb5f81dafa364380e19bf2d4e6f309cd6ab32223c44c1563131c8d24957&w=1060" alt="Seed Product 5">
+            <h2>Carrot Seeds</h2>
+            <p>Price: $3.00</p>
+            <a href="https://www.amazon.in/s?k=carrot+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/various-fresh-radishes-white-radish-long-pink-radish-black-radish_114579-61199.jpg?t=st=1731782338~exp=1731785938~hmac=dd34dfb69be96d1ae93adc2d0de22022413dc9d128323b68c118efc9e64615c4&w=1060" alt="Seed Product 6">
+            <h2>Radish Seeds</h2>
+            <p>Price: $2.00</p>
+            <a href="https://www.amazon.in/s?k=radish+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/top-view-peas-heart-shaped-bowl-with-white-beans_176474-1808.jpg?t=st=1731782372~exp=1731785972~hmac=0a5a5f378275444556ba837bba93d92c7d310dc3df785f026db79a8336b05d3e&w=1060" alt="Seed Product 7">
+            <h2>Green Bean Seeds</h2>
+            <p>Price: $3.50</p>
+            <a href="https://www.amazon.in/s?k=green+bean+seeds"><button class="buy-button">BUY</button></a>        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/lentils_1368-8869.jpg?t=st=1731782397~exp=1731785997~hmac=3375c008bdf530f0520f18a85be1df925f54bd67ff9dce8282fd5568739f1a6a&w=740" alt="Seed Product 8">
+            <h2>Pea Seeds</h2>
+            <p>Price: $2.75</p>
+            <a href="https://www.amazon.in/s?k=pea+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/seed-pumpkin_1368-9166.jpg?t=st=1731782426~exp=1731786026~hmac=2f357d5788370a26d8654cc72dffaa4d8ff4b91bfd9241f74be1321da25e3ecc&w=740" alt="Seed Product 9">
+            <h2>Pumpkin Seeds</h2>
+            <p>Price: $4.50</p>
+            <a href="https://www.amazon.in/s?k=pumpkin+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/red-chili-peppers-peppercorns_144627-43434.jpg?t=st=1731782458~exp=1731786058~hmac=4187f8a8993444eef0d65005d74da99cfec83037fb79a6677400c764012102d0&w=740" alt="Seed Product 10">
+            <h2>Chili Pepper Seeds</h2>
+            <p>Price: $3.25</p>
+            <a href="https://www.amazon.in/s?k=chilli+pepper+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/hemp-seeds_1368-5490.jpg?t=st=1731782484~exp=1731786084~hmac=ee1b9811684a5dff9aa33d52f974b5a87a3c66dbb61ae9f1b15d66ccc18c3c48&w=1060" alt="Seed Product 11">
+            <h2>Spinach Seeds</h2>
+            <p>Price: $2.80</p>
+            <a href="https://www.amazon.in/s?k=spinach+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/pile-ripe-radishes-marble_114579-65095.jpg?t=st=1731782512~exp=1731786112~hmac=4aba55ee85e28152d03f91d27ef4855e38a4be91923ee8564270673ca6b56997&w=1060" alt="Seed Product 12">
+            <h2>Beet Seeds</h2>
+            <p>Price: $3.10</p>
+            <a href="https://www.amazon.in/s?k=beet+seeds"><button class="buy-button">BUY</button></a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Seed Bank. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

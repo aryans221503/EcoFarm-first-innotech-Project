@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Farming Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: url('https://img.freepik.com/premium-photo/3d-rendering-top-view-minimal-workspace-with-yellow-pastel-background-area-idea-copy-space_542094-172.jpg?w=1380');
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .quiz {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .quiz:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .question {
+            margin: 15px 0;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            background-color: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #b3d7ff;
+        }
+
+        .option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 20px;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .quiz {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Organic Farming and Sustainable Techniques Quiz</h1>
+</header>
+
+<div class="container">
+    <div class="quiz">
+        <h2>Question 1</h2>
+        <div class="question">What is organic farming?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming"> A method of farming that uses synthetic fertilizers.</div>
+            <div class="option"><input type="radio" name="farming"> A method of farming that avoids synthetic chemicals.</div>
+            <div class="option"><input type="radio" name="farming"> A method of farming that uses genetically modified organisms.</div>
+            <div class="option"><input type="radio" name="farming"> A method of farming that relies on monoculture.</div>
+        </div>
+        
+    </div>
+
+    <div class="quiz">
+        <h2>Question 2</h2>
+        <div class="question">Which of the following is a sustainable farming practice?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming1"> Crop rotation</div>
+            <div class="option"><input type="radio" name="farming1"> Overgrazing</div>
+            <div class="option"><input type="radio" name="farming1"> Using chemical pesticides</div>
+            <div class="option"><input type="radio" name="farming1"> Deforestation</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 3</h2>
+        <div class="question">What is composting?</div><div class="options">
+            <div class="option"><input type="radio" name="farming2"> The process of burning waste materials.</div>
+            <div class="option"><input type="radio" name="farming2"> The process of decomposing organic matter.</div>
+            <div class="option"><input type="radio" name="farming2"> The process of using chemical fertilizers.</div>
+            <div class="option"><input type="radio" name="farming2"> The process of planting crops in rows.</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 4</h2>
+        <div class="question">What is permaculture?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming3"> A method of farming that uses monoculture.</div>
+            <div class="option"><input type="radio" name="farming3"> A design system for creating sustainable agricultural ecosystems.</div>
+            <div class="option"><input type="radio" name="farming3"> A technique for growing crops in greenhouses.</div>
+            <div class="option"><input type="radio" name="farming3"> A method of farming that relies on chemical fertilizers.</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 5</h2>
+        <div class="question">Which of the following is a benefit of organic farming?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming4"> Higher pesticide residues in food.</div>
+            <div class="option"><input type="radio" name="farming4"> Improved soil health and biodiversity.</div>
+            <div class="option"><input type="radio" name="farming4"> Increased dependence on synthetic fertilizers.</div>
+            <div class="option"><input type="radio" name="farming4"> Lower crop yields.</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 6</h2>
+        <div class="question">What is agroforestry?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming5"> The practice of growing crops without soil.</div>
+            <div class="option"><input type="radio" name="farming5"> The integration of trees and shrubs into agricultural landscapes.</div>
+            <div class="option"><input type="radio" name="farming5"> The use of only one type of crop in farming.</div>
+            <div class="option"><input type="radio" name="farming5"> The practice of using chemical fertilizers.</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 7</h2>
+        <div class="question">What is the main goal of sustainable agriculture?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming6"> To maximize short-term profits.</div>
+            <div class="option"><input type="radio" name="farming6"> To maintain the health of the environment and communities.</div>
+            <div class="option"><input type="radio" name="farming6"> To increase the use of chemical inputs.</div>
+            <div class="option"><input type="radio" name="farming6"> To focus solely on crop production.</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 8</h2>
+        <div class="question">Which of the following is a characteristic of organic farming?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming7"> Use of synthetic herbicides.</div>
+            <div class="option"><input type="radio" name="farming7"> Use of crop rotation and cover crops.</div>
+            <div class="option"><input type="radio" name="farming7"> Reliance on monoculture.</div>
+            <div class="option"><input type="radio" name="farming7"> Use of genetically modified organisms.</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 9</h2>
+        <div class="question">What is the purpose of cover crops?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming8"> To prevent soil erosion and improve soil health.</div>
+            <div class="option"><input type="radio" name="farming8"> To increase the use of chemical fertilizers.</div>
+            <div class="option"><input type="radio" name="farming8"> To grow cash crops only.</div>
+            <div class="option"><input type="radio" name="farming8"> To reduce biodiversity.</div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Question 10</h2>
+        <div class="question">What is integrated pest management (IPM)?</div>
+        <div class="options">
+            <div class="option"><input type="radio" name="farming9"> A method that relies solely on chemical pesticides.</div>
+            <div class="option"><input type="radio" name="farming9"> A holistic approach to managing pests using various techniques.</div>
+            <div class="option"><input type="radio" name="farming9"> A technique that ignores pest populations.</div>
+            <div class="option"><input type="radio" name="farming9"> A method that promotes monoculture.</div>
+        </div>
+    </div>
+
+    <!-- Continue adding questions up to 25 -->
+
+    <button class="submit-button">Submit</button>
+</div>
+
+<footer>
+    <p>&copy; 2023 Organic Farming Quiz. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

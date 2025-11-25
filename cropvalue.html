@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Value Calculator</title>
+    <link rel="stylesheet" href="cropvalue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-wrapper">
+            <h1><i class="fas fa-leaf"></i> Crop Value Calculator</h1>
+            
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="crop-type">
+                        <i class="fas fa-seedling"></i> Crop Type
+                    </label>
+                    <select id="crop-type">
+                        <option value="wheat">Wheat</option>
+                        <option value="rice">Rice</option>
+                        <option value="corn">Corn</option>
+                        <option value="sugarcane">Sugarcane</option>
+                        <option value="soyabean">Soyabean</option>
+                        <option value="onion">Onion</option>
+                        <option value="tomato">Tomato</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="area">
+                        <i class="fas fa-ruler-combined"></i> Area (hectares)
+                    </label>
+                    <input type="number" id="area" min="0" step="0.1">
+                </div>
+
+                <div class="input-field">
+                    <label for="yield">
+                        <i class="fas fa-weight-hanging"></i> Expected Yield (tons/hectare)
+                    </label>
+                    <input type="number" id="yield" min="0" step="0.1">
+                </div>
+
+                <div class="input-field">
+                    <label for="price">
+                        <i class="fas fa-rupee-sign"></i> Market Price (MSP) (₹/ton)
+                    </label>
+                    <input type="number" id="price" min="0" step="0.1">
+                </div>
+            </div>
+
+            <button onclick="calculateValue()">
+                <i class="fas fa-calculator"></i> Calculate
+            </button>
+
+            <div class="result" id="result">
+                <h2>Estimated Value</h2>
+                <p class="value">₹0.00</p>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Farming field" class="hero-image">
+            <div class="tips">
+                <h3><i class="fas fa-lightbulb"></i> Tips</h3>
+                <ul>
+                    <li>Consider seasonal variations in yield</li>
+                    <li>Monitor market prices regularly</li>
+                    <li>Account for production costs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="cropvalue.js"></script>
+</body>
+</html>
